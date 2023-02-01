@@ -1,0 +1,6 @@
+# prettier 검사를 무시하는 파일들을 정의합니다.
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- js 파일을 분할 관리할 수 있다. -->
+    <title>Vue.js Page</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app"></div>
+
+    <script type="module">
+      const { createApp } = Vue;
+      // import를 사용하여 필요한 js 파일을 가져온다.
+      import MyComponent from './my-component.js';
+
+      createApp(MyComponent).mount('#app');
+    </script>
+  </body>
+</html>

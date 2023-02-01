@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 빌드 도구를 사용하지 않고 vue를 사용할 수도 있다. -->
+    <title>Vue.js Page with No Build Tool</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">{{ message }}</div>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            message: '안녕 Vue! 이건 도구 없이 그냥 돌린 템플릿이야!',
+          };
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>
